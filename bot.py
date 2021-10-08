@@ -15,7 +15,17 @@ descr = ""
 print("My PID is:", os.getpid())
 o = open(na, "a")
 
+app_name = os.getenv("RAILWAY_STATIC_URL", "")
+if len(str(app_name)) < 2:
+   app_name_heroku = os.getenv("HEROKU_APP_NAME", "")
+   if app_name_heroku == "":
+      print("please put your app url for webhook in env or disable webhook")
+      sys.exit(1)
+   else:
+      app_name = "https://" app_name_heroku + ".herokuapp.com/"
+
 PORT = int(os.environ.get('PORT', 5000))
+
 token = os.getenv("token", "")
 if len(str(token)) < 5: print("please put your token in env"); sys.exit(1)
 
@@ -239,9 +249,9 @@ def main():
     dp.add_handler(InlineQueryHandler(inlinequery))
     dp.add_handler(MessageHandler(Filters.text & ~Filters.command, cat))
     dp.add_handler(MessageHandler(Filters.photo, cat))
-#    updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=token)  # comment for local testing
- #   updater.bot.setWebhook('https://catbtbyxd.herokuapp.com/' + token)  # comment for local testing
-    updater.start_polling() # uncomment for local testing
+    updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=token)  # comment for local testing
+    updater.bot.setWebhook(app_name + token)  # comment for local testing
+    #updater.start_polling() # uncomment for local testing
     updater.idle()
     o.flush()
     print ("ok")
