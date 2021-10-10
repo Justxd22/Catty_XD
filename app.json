@@ -1,0 +1,19 @@
+{
+  "name": "Catty_XD",
+  "description": "Catty The Cat",
+  "repository": "https://github.com/Justxd22/Catty_XD",
+  "logo": "https://telegra.ph/file/e7cdb58f27da575a925a5.jpg",
+  "keywords": [
+    "Catty","XD"
+  ],
+  "env":{
+  "token": {
+    "required": true,
+    "description": "Your telegram bot token get from bot father"
+  },
+  "HEROKU_APP_NAME": {
+    "required": true,
+    "description": "Your app name Required for the webhook to work"
+  }
+}}
+
