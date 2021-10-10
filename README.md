@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://telegra.ph/file/e7cdb58f27da575a925a5.jpg" width="200" height="200"  alt="logo" />
+<img src="https://telegra.ph/file/e7cdb58f27da575a925a5.jpg" width="340" height="200"  alt="logo" />
 </div>
 # Catty_XD
 
@@ -16,8 +16,7 @@ These are the reasons you should star this repo, STAR it now!
 
 
 # Setup
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FJustxd22%2FCatty_XD&envs=token&tokenDesc=Your+telegram+bot+token+get+from+bot+father&referralCode=4_MSke)
-
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FJustxd22%2Frdt_XD&envs=token&tokenDesc=Your+telegram+bot+token+get+from+bot+father&referralCode=4_MSke)
 [![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Justxd22/Catty_XD)
  
 ### For Heroku hosting
