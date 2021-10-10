@@ -1,5 +1,5 @@
 <div align="center">
-<img src="ttps://telegra.ph/file/e7cdb58f27da575a925a5.jpg" width="200" height="200"  alt="logo" />
+<img src="https://telegra.ph/file/e7cdb58f27da575a925a5.jpg" width="200" height="200"  alt="logo" />
 </div>
 # Catty_XD
 
